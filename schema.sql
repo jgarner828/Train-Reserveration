@@ -3,7 +3,7 @@ create schema if not exists train_tracker;
 use train_tracker;
 
 create table if not exists customer (
-    customer_id int,
+    customer_id int primary key auto_increment,
     first_name varchar(50),
     last_name varchar(50),
     email varchar(50),
@@ -13,7 +13,7 @@ create table if not exists customer (
 
 
 create table if not exists train (
-    train_id int,
+    train_id int primary key auto_increment,
     name varchar(50),
     model varchar(50),
     manufacturer varchar(50),
@@ -24,7 +24,7 @@ create table if not exists train (
 );
 
 create table if not exists ticket (
-    ticket_id int,
+    ticket_id int primary key auto_increment,
     route_id int,
     customer_id int,
     first_name varchar(50),
@@ -36,7 +36,7 @@ create table if not exists ticket (
 );
 
 create table if not exists route (
-route_id int,
+route_id int primary key auto_increment,
 name varchar(50),
 train_id int,
 sourceStationId int,
