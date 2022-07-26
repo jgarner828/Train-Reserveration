@@ -1,4 +1,4 @@
-package com.garnerju.trainreservationcontroller;
+package com.garnerju.trainreservation;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
