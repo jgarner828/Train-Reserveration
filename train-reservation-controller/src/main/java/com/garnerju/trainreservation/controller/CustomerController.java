@@ -29,7 +29,7 @@ public class CustomerController {
         return customerService.createCustomer(newCustomer);
     }
 
-    @PutMapping("/customers/")
+    @PutMapping("/customers")
     public void updateCustomer(@RequestBody Customer customer) {
         customerService.updateCustomer(customer);
     }

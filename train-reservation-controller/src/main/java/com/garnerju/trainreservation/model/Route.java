@@ -19,7 +19,7 @@ public class Route {
     private String name;
 
     @Column(name = "train_id")
-    private int train_id;
+    private int trainId;
 
     @Column(name = "source_station_id")
     private int sourceStationId;
@@ -27,17 +27,17 @@ public class Route {
     @Column(name = "destination_station_id")
     private int destinationStationId;
 
-    public Route(int id, String name, int train_id, int sourceStationId, int destinationStationId) {
+    public Route(int id, String name, int trainId, int sourceStationId, int destinationStationId) {
         this.id = id;
         this.name = name;
-        this.train_id = train_id;
+        this.trainId = trainId;
         this.sourceStationId = sourceStationId;
         this.destinationStationId = destinationStationId;
     }
 
     public Route(String name, int train_id, int sourceStationId, int destinationStationId) {
         this.name = name;
-        this.train_id = train_id;
+        this.trainId = train_id;
         this.sourceStationId = sourceStationId;
         this.destinationStationId = destinationStationId;
     }
@@ -62,12 +62,12 @@ public class Route {
         this.name = name;
     }
 
-    public int getTrain_id() {
-        return train_id;
+    public int getTrainId() {
+        return trainId;
     }
 
-    public void setTrain_id(int train_id) {
-        this.train_id = train_id;
+    public void setTrainId(int train_id) {
+        this.trainId = train_id;
     }
 
     public int getSourceStationId() {
@@ -91,12 +91,12 @@ public class Route {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Route route = (Route) o;
-        return id == route.id && train_id == route.train_id && sourceStationId == route.sourceStationId && destinationStationId == route.destinationStationId && Objects.equals(name, route.name);
+        return id == route.id && trainId == route.trainId && sourceStationId == route.sourceStationId && destinationStationId == route.destinationStationId && Objects.equals(name, route.name);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, name, train_id, sourceStationId, destinationStationId);
+        return Objects.hash(id, name, trainId, sourceStationId, destinationStationId);
     }
 
     @Override
@@ -104,7 +104,7 @@ public class Route {
         return "Route{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
-                ", train_id=" + train_id +
+                ", train_id=" + trainId +
                 ", sourceStationId=" + sourceStationId +
                 ", destinationStationId=" + destinationStationId +
                 '}';
