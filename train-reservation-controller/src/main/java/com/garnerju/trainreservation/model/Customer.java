@@ -1,10 +1,14 @@
 package com.garnerju.trainreservation.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import javax.persistence.*;
 import java.util.Objects;
 
 
 @Entity
+@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
+@Table(name = "customer")
 public class Customer {
 
     @Id
