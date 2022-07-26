@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Train-Reservation.iml" filepath="$PROJECT_DIR$/.idea/Train-Reservation.iml" />
       <module fileurl="file://$PROJECT_DIR$/config-server/config-server.iml" filepath="$PROJECT_DIR$/config-server/config-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/train-reservation-controller/train-reservation-controller.iml" filepath="$PROJECT_DIR$/train-reservation-controller/train-reservation-controller.iml" />
     </modules>
   </component>
 </project>
