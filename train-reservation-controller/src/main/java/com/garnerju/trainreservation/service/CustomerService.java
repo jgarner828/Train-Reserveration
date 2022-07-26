@@ -20,8 +20,7 @@ public class CustomerService {
     }
 
     public Customer createCustomer(Customer newCustomer) {
-        repo.save(newCustomer);
-        return newCustomer;
+        return repo.save(newCustomer);
     }
 
     public Customer getCustomerById(int id) {
